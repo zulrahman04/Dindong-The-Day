@@ -57,9 +57,9 @@ li span {
   height: auto;
   max-width: 70%;
   position: absolute;
-  top: 65%;
-  left: 45%;
-  /* transform: translate(-50%, -50%); */
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
   opacity: 0; 
   transition: opacity 2s ease-in; 
@@ -220,9 +220,8 @@ li span {
 
 @media (max-width: 768px) {
   #birthdayImage {
-    width: 70%;
-    top: 50%;
-    left: 38%;
+    width: 85%;
+    top: 70%;
   }
   .text-overlay {
     left: 64%;
