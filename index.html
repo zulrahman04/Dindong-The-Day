@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="styles/system-fonts.css" media="all">
   <link rel="stylesheet" href="styles/style.css" media="all">
 </head>
-
 <body>
+  <audio id="birthdaySong" src="./Jamrud_-_Selamat_Ulang_Tahun.mp3" preload="auto"></audio>
   <canvas id=c></canvas>
   <canvas id="confetti" style="position: absolute; z-index: 2;"></canvas>
   <div class="container" id="count">
@@ -31,9 +31,35 @@
       </div>
       <div class="box"></div>
     </div>
-    <img id="birthdayImage" src="./arti2.png" alt="Happy Birthday!" />
+    <div class="image-container">
+      <img id="birthdayImage" src="./arti2.png" alt="Happy Birthday!" />
+      <!-- <img id="birthdayImage" src="https://doktersehat.com/wp-content/uploads/2018/10/khasiat-ikan-gabus-doktersehat.jpg" alt="Happy Birthday!" /> -->
+      <!-- <div class="text-overlay">
+        <h5>CLICK ME!</h5>
+      </div> -->
+    </div>
+   
+    <div class="card" id="card" style="z-index: 3;">
+      <div class="imgBox">
+        <Sediv class="bark"></Sediv>
+        <img src="./cover.png" id="coverImg"> 
+          <h5>CLICK ME!</h5>
+      </div>
+      <div class="details">
+        <h4 class="color1">Selamat Ulang Tahun</h4> 
+        <h2 class="color2 margin"></h2> <br>
+        <h6 class="color2 margin"></h6>
+          <p>Hari ini gua cuma mau bilang: jangan terlalu senang! Umurmu memang bertambah, tapi itu berarti jatah hidup makin berkurang. 😜</p><br>
+          <p>Kalau ada yang bilang tambah tua, jangan dengerin! Itu cuma angka. Tapi ya, jangan lupa beli skincare biar muka lu enggak ikut tua. ✨</p><br>
+          <p>Semoga kebahagiaan dan mie gacoan selalu ada di hidupmu. Dan yang paling penting: semoga tahun ini pacar enggak cuma di wishlist! 😂</p> <br>
+          <p class="text-right">untuk Artiani Chandra Ningsih</p><br>
+          <p class="text-right">Dari Kemaren capek gua bikinnya</p>
+      </div> 
+    </div>
   </div>
-  <audio id="birthdaySong" src="./Jamrud_-_Selamat_Ulang_Tahun.mp3" preload="auto"></audio>
+  <!-- <canvas id="birthday"></canvas> -->
+
+  <script src="indexs.js" charset="utf-8"></script>
 </body>
 <script src="scripts/confetti.min.js" charset="utf-8"></script>
 <script src="scripts/index.js" charset="utf-8"></script>

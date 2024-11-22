@@ -1,0 +1,147 @@
+<style>
+        @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+    @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+    canvas{display:block;}
+    body {
+        font-family: 'Indie Flower', cursive !important;
+        background: #020202; /*CAPE HONEY*/
+        margin: 0px;
+        padding: 0px;
+    }
+
+    ::selection {
+        background: transparent;
+    }
+
+    h4 {
+    color: #003152;
+        font-size: 26px;
+        line-height: 1px;
+        font-family: 'Amatic SC', cursive !important;
+    }
+
+    .color1{color:#30BA8F}/*MOUNTAIN MEADOW*/
+    .color2{color:#00ADB2/*TALL POPPY*/}
+
+
+    .card {
+        color: #1D2951; /*SHERPA BLUE*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 400px;
+        background: #d1ffff;
+        transform-style: preserve-3d;
+        transform: translate(-50%,-50%) perspective(2000px);
+        box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
+        transition: 2s;
+    }
+
+    .card:hover {
+        transform: translate(-50%,-50%) perspective(2000px) rotate(5deg) scale(1.2);
+        box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+    }
+
+    .card:before {
+        content:'';
+        position: absolute;
+        top: -5px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: #d1ffff;
+        transform-origin: bottom;
+        transform: skewX(-45deg);
+    }
+
+    .card:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -5px;
+        width: 5px;
+        height: 100%;
+        background: #d1ffff;
+        transform-origin: left;
+        transform: skewY(-45deg);
+    }
+
+    .card .imgBox {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-origin: left;
+        transition: .7s;
+    }
+
+    .card .bark {
+        position: absolute;
+        background: #dbffff;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: .7s;
+    }
+
+    .card .imgBox img {
+        min-width: 250px;
+        max-height: 400px;
+    }
+
+    .card:hover .imgBox {
+        transform: rotateY(-135deg);
+    }
+
+    .card:hover .bark {
+        opacity: 1;
+        transition: .6s;
+    box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
+    }
+
+    .card .details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        padding: 0 0 0 10px;
+        z-index: -1;
+        margin-top: 30px;
+    }
+
+    .card .details p {
+        font-size: 13px;
+        line-height: 5px;
+        padding: 0 20px 0 20px;
+    line-height: 1.5;
+    }
+
+    .card .details h4 {
+        text-align: center;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+</style>
+<div class="card">
+    <div class="imgBox">
+        <Sediv class="bark"></Sediv>
+        <img src="./cover.png"> <!-- Upload Cover di sini -->
+    </div>
+    <div class="details">
+        <h4 class="color1">Selamat Ulang Tahun</h4> <!-- Tulis judul di sini -->
+        <h4 class="color2 margin"></h4> <!-- Tulis sub-judul di sini -->
+  <h6 class="color2 margin"></h6>
+        <p>Adin, terimakasih sudah menjadi orang baik. Aku berdoa supaya  adin selalu mendapatkan yang terbaik, sehat selalu, umur yang panjang, dan terwujudnya semua keinginan adin.</p>
+    <p>Sekali lagi, selamat sudah sampai sejauh iniii, aku bangga sama adinnnn. Pengennnn bangeetttt meluk adiinnnn, semoga nanti kita bisa ketemu yaa.</p>
+  <p>Semangat diperjalanannya menjadi ibu dokter! (juga jadi ibu dari anak-anak kita nanti hehe).</p> <!-- Tulis bait awal di sini -->
+  <!-- Tulis bait akhir di sini -->
+        <p class="text-right">untuk Adin♥</p> <!-- Tulis tertanda di sini -->
+        <p class="text-right">Dari Abe</p>
+    </div> <!-- Tulis nama kamu di sini -->
+</div>
+<!-- <canvas id="birthday"></canvas> -->
+
+<script src="indexs.js" charset="utf-8"></script>

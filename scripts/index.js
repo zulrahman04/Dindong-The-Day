@@ -515,21 +515,46 @@ x = setInterval(function() {
       //   setTimeout(anim, 1900);
     }
 
+    const card = document.getElementById('card');
+
+    card.addEventListener('touchstart', function () {
+      card.classList.add('active');
+    });
+  
+    // Hapus efek saat sentuhan selesai
+    card.addEventListener('touchend', function () {
+      card.classList.remove('active');
+    });
+    
+    
+    let audio = false;
     function showfireworks() {
-      document.getElementById('birthdaySong').play();
-      document.getElementById('birthdaySong').currentTime += 12;
+      
+      if (audio == false) {
+        audio = true;
+        document.getElementById('birthdaySong').play();
+        document.getElementById('birthdaySong').currentTime += 12;
+      };
       canvasC.style.display = 'initial';
       setTimeout(() => {
         anim();
-        displayImage(); // Panggil fungsi untuk menampilkan gambar
+        displayImage();
+        audio = false;
         
       }, 1500);
+      
+      setTimeout(showCard, 10000);
     }
     function displayImage() {
       const birthdayImage = document.getElementById('birthdayImage');
       birthdayImage.style.opacity = '1'; 
     }
-
+    function showCard() {
+      card.style.display = 'block'; // Make it visible
+      setTimeout(() => {
+        card.style.opacity = '1'; // Gradually increase opacity
+      }, 10); // Slight delay for better transition
+    }
     init();
   }
 
