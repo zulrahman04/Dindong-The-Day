@@ -58,7 +58,7 @@ li span {
   max-width: 70%;
   position: absolute;
   top: 70%;
-  left: 50%;
+  left: 80%;
   transform: translate(-50%, -50%);
   z-index: 1;
   opacity: 0; 
@@ -68,13 +68,12 @@ li span {
 
 @media (max-width: 320px) {
   #birthdayImage {
-    width: 80%;
-    max-width: 70%;
-    top: 50%;
-    left: 38%;
+    width: 85%;
+    top: 70%;
+    left: 80%;
   }
   .image-container {
-    top: 55%;
+    top: 65%;
   }
   
   .text-overlay {
@@ -222,12 +221,13 @@ li span {
   #birthdayImage {
     width: 85%;
     top: 70%;
+    left: 80%;
   }
   .text-overlay {
     left: 64%;
   }
   .image-container {
-    top: 55%;
+    top: 65%;
   }
   .card{    
     left: 50%;
@@ -237,8 +237,11 @@ li span {
 @media (min-width: 1200px) {
   #birthdayImage {
     width: 30%;
-    top: 85%;
-    left: 56.5%;
+    top: 90%;
+    left: 75%;
+  }
+  .image-container {
+    top: 80%;
   }
   .card .details p {
     font-size: 12px;
