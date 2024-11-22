@@ -141,7 +141,7 @@ class Firework {
 let then = timestamp()
 
 let birthday = new Birthday
-window.onresize = () => birthday.resize()
+//window.onresize = () => birthday.resize()
 document.onclick = evt => birthday.onClick(evt)
 document.ontouchstart = evt => birthday.onClick(evt)
 
