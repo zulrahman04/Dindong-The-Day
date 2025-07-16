@@ -68,7 +68,7 @@ li span {
 
 @media (max-width: 320px) {
   #birthdayImage {
-    width: 80%;
+    width: 75%;
     top: 70%;
     left: 70%;
   }
